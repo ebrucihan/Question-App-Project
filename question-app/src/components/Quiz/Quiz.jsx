@@ -14,13 +14,13 @@ export const Quiz = () => {
 
   const startQuiz = () => {
     setIsQuizStarted(true);
-    setQuestion(data[index]);
+    setQuestion(data[0]);
     setShowOptions(false);
     setTimeLeft(30);
     setIsTimerRunning(false);
     setUserAnswers([]);
     setCorrectAnswersCount(0);
-    setIndex(0); // Sıfırdan başlat
+    setIndex(0);
   };
 
   const handleAnswer = (option) => {
@@ -72,23 +72,25 @@ export const Quiz = () => {
     }
   }, [isQuizStarted, index, isTimerRunning]);
 
+  const unansweredCount = data.length - userAnswers.length;
+
   return (
     <div className="container">
-      <h1>Quiz App</h1>
+      <h1>Quiz App 🚀</h1>
       <hr />
 
-      {!isQuizStarted ? (
+      {!isQuizStarted && userAnswers.length === 0 ? (
         <div className="start-screen">
-          <h2>Teste Hoş Geldiniz!</h2>
+          <h2>Teste Hoş Geldiniz🧠</h2>
           <p>
             Bu test, genel kültür bilgilerinizi ölçmenize yardımcı olacaktır.
-            Başlamak için butona tıklayın.
+            Başlamak için butona tıklayın❕
           </p>
           <button id="start" onClick={startQuiz}>
             Teste Başla
           </button>
         </div>
-      ) : (
+      ) : isQuizStarted ? (
         <>
           {question.media && (
             <img
@@ -113,7 +115,7 @@ export const Quiz = () => {
           {!showOptions && <p>Seçenekler 4 saniye sonra görünecektir...</p>}
           {timeLeft === 0 && <p>Zaman doldu! Yeni soruya geçiliyor...</p>}
 
-          <div className="timer">Kalan Süre: {timeLeft} saniye</div>
+          <div className="timer"> {timeLeft} </div>
 
           <div className="index">
             {index + 1} of {data.length} questions
@@ -121,15 +123,13 @@ export const Quiz = () => {
 
           {showOptions && <button onClick={handleNext}>Sonraki Soru</button>}
         </>
-      )}
-
-      {/* Quiz tamamlandığında sonuçları göster */}
-      {!isQuizStarted && userAnswers.length > 0 && (
+      ) : (
         <div className="results">
           <h2>Sonuçlar</h2>
           <p>Toplam Doğru: {correctAnswersCount}</p>
           <p>Toplam Yanlış: {userAnswers.length - correctAnswersCount}</p>
-          {/* Yanlış Cevaplanan Sorular listesi kaldırıldı */}
+          <p>Toplam Boş: {unansweredCount}</p>
+          <button onClick={startQuiz}>Testi Tekrar Çöz</button>
         </div>
       )}
     </div>
