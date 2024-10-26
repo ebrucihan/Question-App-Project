@@ -129,6 +129,18 @@ export const Quiz = () => {
           <p>Toplam Doğru: {correctAnswersCount}</p>
           <p>Toplam Yanlış: {userAnswers.length - correctAnswersCount}</p>
           <p>Toplam Boş: {unansweredCount}</p>
+          <h3>Yanlış Cevaplar:</h3>
+          <ul>
+            {userAnswers
+              .filter((answer) => !answer.isCorrect)
+              .map((answer, idx) => (
+                <li key={idx}>
+                  Soru: {answer.question}, Yanlış Cevap: {answer.answer}, Doğru
+                  Cevap:{" "}
+                  {data.find((q) => q.question === answer.question).answer}
+                </li>
+              ))}
+          </ul>
           <button onClick={startQuiz}>Testi Tekrar Çöz</button>
         </div>
       )}

@@ -184,6 +184,21 @@ button:hover {
     height: 50px; /* Zamanlayıcı yüksekliğini küçült */
     font-size: 1.2rem; /* Zamanlayıcı yazı boyutunu küçült */
   }
+  .results h2 {
+    font-size: 1.5rem; /* Sonuç başlığı boyutunu küçült */
+  }
+
+  .results p {
+    font-size: 1rem; /* Sonuç metin boyutunu küçült */
+  }
+
+  .results h3 {
+    font-size: 1.2rem; /* Yanlış cevap başlığı boyutunu küçült */
+  }
+
+  .results button {
+    padding: 8px 16px; /* Sonuç butonunun padding'ini küçült */
+  }
 }
 
 /* Orta Ekranlar (tabletler) için */
