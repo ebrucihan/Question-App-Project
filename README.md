@@ -11,13 +11,14 @@ This is a simple, interactive Quiz Application built with React. It allows users
 - **Answer Review**: Displays all questions, showing correct and incorrect answers, along with the correct responses at the end.
 - **Responsive Design**: Optimized for mobile, tablet, and desktop screens.
 
-## Screenshots
+## Application Screens
 
 | Screen            | Description                                  |
 | ----------------- | -------------------------------------------- |
 | **Start Screen**  | Displays welcome message and "Start" button |
 | **Question View** | Shows question, options, and countdown timer |
 | **Results Page**  | Summarizes quiz results, correct and incorrect answers |
+
 
 ## Tech Stack
 
