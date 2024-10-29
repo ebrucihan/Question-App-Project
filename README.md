@@ -27,7 +27,7 @@ This is a simple, interactive Quiz Application built with React. It allows users
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/quiz-app.git
+   git clone https://github.com/ebrucihan/Question-App-Project.git
 
 2. Navigate to the project folder:
    ```bash
