@@ -38,7 +38,7 @@ This is a simple, interactive Quiz Application built with React. It allows users
 
 2. Navigate to the project folder:
    ```bash
-   cd quiz-app
+   cd question-app
    
 3. Install dependencies:
    ```bash
