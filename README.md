@@ -25,6 +25,11 @@ This is a simple, interactive Quiz Application built with React. It allows users
 - **CSS**: Custom styling, including animations and responsive design.
 - **JavaScript**: For logic handling.
 
+## Screenshots
+![1](https://github.com/user-attachments/assets/bf3599da-a0cc-4157-9210-595aeb1e5ed1)
+![2](https://github.com/user-attachments/assets/278f46f8-5161-4631-9a37-cdbc8c38b316)
+![3](https://github.com/user-attachments/assets/acf35dc7-b406-43bd-be21-504e9f048c0c)
+
 ## Installation
 
 1. Clone the repository:
