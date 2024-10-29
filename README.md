@@ -2,6 +2,8 @@
 
 This is a simple, interactive Quiz Application built with React. It allows users to test their general knowledge through multiple-choice questions, with feedback on correct and incorrect answers at the end of the quiz.
 
+## [Live Demo](https://silver-llama-e9fdd7.netlify.app/)
+
 ## Features
 
 - **Start and Restart Quiz**: Users can start the quiz and restart it after finishing.
