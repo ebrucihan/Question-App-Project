@@ -1,5 +1,4 @@
-/* Quiz.css */
-
+/* Center the main container and set max width */
 .container {
   max-width: 800px;
   margin: 30px auto 0;
@@ -7,31 +6,37 @@
   text-align: center;
 }
 
+/* Main heading styling */
 h1 {
   font-size: 3rem;
   color: #333;
 }
 
+/* Horizontal line styling */
 hr {
   margin: 10px 0 20px;
 }
 
+/* Start screen styling */
 .start-screen {
   padding: 20px;
 }
 
+/* Start screen heading styling */
 .start-screen h2 {
   font-size: 1.5rem;
   color: #444;
   margin: 10px;
 }
 
+/* Start screen paragraph styling */
 .start-screen p {
   margin: 10px;
   font-size: 1.2rem;
   color: #666;
 }
 
+/* Start button styling */
 #start {
   padding: 10px 20px;
   margin: 30px;
@@ -43,38 +48,44 @@ hr {
   cursor: pointer;
 }
 
+/* Start button hover effect */
 #start:hover {
   background-color: #c9c0c6;
 }
 
+/* Media container for question images */
 .media-container {
-  display: flex; /* Görüntüyü merkezlemek için flexbox kullanın */
-  justify-content: center; /* Yatayda merkezleme */
-  align-items: center; /* Dikeyde merkezleme */
-  margin-bottom: 15px; /* Alt boşluk ekleyin */
-  border-radius: 10px; /* Kenarları yuvarlayın */
-  overflow: hidden; /* Taşmayı önlemek için */
-  width: 100%; /* Genişlik ayarı */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
 }
 
+/* Question media styling */
 .question-media {
-  width: 100%; /* Resmin genişliğini konteyner genişliğine ayarlama */
-  height: 100%; /* Resmin yüksekliğini konteyner yüksekliğine ayarlama */
-  object-fit: scale-down; /* Resmi konteyneri dolduracak şekilde boyutlandırma */
-  border-radius: 10px; /* Kenarları yuvarlayın */
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  border-radius: 10px;
 }
 
+/* Secondary heading styling */
 h2 {
   font-size: 1.3rem;
   color: #333;
   margin-bottom: 10px;
 }
 
+/* List styling for answer options */
 ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* List item styling for answer options */
 ul li {
   background-color: #f8f9fa;
   margin: 8px 0;
@@ -85,32 +96,36 @@ ul li {
   transition: background-color 0.3s;
 }
 
+/* Hover effect for answer options */
 ul li:hover {
   background-color: #e2e6ea;
 }
 
+/* Timer styling */
 .timer {
-  font-size: 1.5rem; /* Yazı boyutu */
-  color: white; /* Yazı rengi beyaz */
+  font-size: 1.5rem;
+  color: white;
   background-color: #333;
-  border-radius: 50%; /* Yuvarlak görünüm */
-  width: 70px; /* Genişlik ayarı */
-  height: 70px; /* Yükseklik ayarı */
-  display: flex; /* İçerik için flexbox kullanımı */
-  align-items: center; /* Dikey ortalama */
-  justify-content: center; /* Yatay ortalama */
-  position: fixed; /* Sayfanın sağ kenarına sabitleme */
-  right: 10px; /* Sağdan 10 piksel boşluk */
-  top: 10px; /* Üstten 10 piksel boşluk */
-  z-index: 1000; /* Diğer öğelerin üstünde görünmesi için z-index */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 1000;
 }
 
+/* Question index display styling */
 .index {
   font-size: 1rem;
   color: #706f6f;
   margin-top: 10px;
 }
 
+/* General button styling */
 button {
   padding: 10px 15px;
   font-size: 1rem;
@@ -121,25 +136,76 @@ button {
   cursor: pointer;
 }
 
+/* Hover effect for buttons */
 button:hover {
   background-color: #c9c0c6;
 }
 
+/* Results section styling */
 .results {
   padding: 20px;
 }
 
+/* Results heading styling */
 .results h2 {
   font-size: 2rem;
   color: #333;
 }
 
+/* Results subheading styling */
+.results h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Results paragraph styling */
 .results p {
   font-size: 1.5rem;
   color: #444;
-  margin: 10px;
+  margin: 15px;
 }
 
+/* Answers list styling */
+.answers-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+/* Individual answer item styling */
+.answer-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Correct answer background */
+.answer-item.correct {
+  background-color: #d4edda;
+}
+
+/* Incorrect answer background */
+.answer-item.incorrect {
+  background-color: #f8d7da;
+}
+
+/* Styling for question text */
+.question-text {
+  font-weight: bold;
+}
+
+/* Styling for user answers */
+.user-answer {
+  font-style: italic;
+}
+
+/* Styling for correct answers */
+.correct-answer {
+  color: #ff0000;
+}
+
+/* Results button styling */
 .results button {
   padding: 10px 20px;
   font-size: 1rem;
@@ -151,119 +217,121 @@ button:hover {
   margin: 10px;
 }
 
+/* Hover effect for results button */
 .results button:hover {
   background-color: #c9c0c6;
 }
 
-/* Medya Sorguları ile Responsive Tasarım */
+/* Responsive Design with Media Queries */
 
-/* Küçük Ekranlar (mobil cihazlar) için */
+/* Small screens (mobile) */
 @media (max-width: 600px) {
   .container {
-    padding: 30px; /* Dış boşlukları azalt */
+    padding: 30px;
   }
 
   h1 {
-    font-size: 2.5rem; /* Başlık boyutunu küçült */
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 1.2rem; /* İkinci başlık boyutunu küçült */
+    font-size: 1.2rem;
   }
 
   #start {
-    font-size: 1.2rem; /* Başlat butonu boyutunu küçült */
+    font-size: 1.2rem;
   }
 
   ul li {
-    padding: 8px; /* Liste öğeleri için padding azalt */
+    padding: 8px;
   }
 
   .timer {
-    width: 50px; /* Zamanlayıcı genişliğini küçült */
-    height: 50px; /* Zamanlayıcı yüksekliğini küçült */
-    font-size: 1.2rem; /* Zamanlayıcı yazı boyutunu küçült */
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
   }
+
   .results h2 {
-    font-size: 1.5rem; /* Sonuç başlığı boyutunu küçült */
+    font-size: 1.5rem;
   }
 
   .results p {
-    font-size: 1rem; /* Sonuç metin boyutunu küçült */
+    font-size: 1rem;
   }
 
   .results h3 {
-    font-size: 1.2rem; /* Yanlış cevap başlığı boyutunu küçült */
+    font-size: 1.2rem;
   }
 
   .results button {
-    padding: 8px 16px; /* Sonuç butonunun padding'ini küçült */
+    padding: 8px 16px;
   }
 }
 
-/* Orta Ekranlar (tabletler) için */
+/* Medium screens (tablets) */
 @media (min-width: 601px) and (max-width: 900px) {
   .container {
-    padding: 50px; /* Dış boşlukları azalt */
+    padding: 50px;
   }
 
   h1 {
-    font-size: 2.8rem; /* Başlık boyutunu küçült */
+    font-size: 2.8rem;
   }
 
   h2 {
-    font-size: 1.4rem; /* İkinci başlık boyutunu küçült */
+    font-size: 1.4rem;
   }
 
   #start {
-    font-size: 1.4rem; /* Başlat butonu boyutunu küçült */
+    font-size: 1.4rem;
   }
 
   .timer {
-    width: 60px; /* Zamanlayıcı genişliğini küçült */
-    height: 60px; /* Zamanlayıcı yüksekliğini küçült */
-    font-size: 1.4rem; /* Zamanlayıcı yazı boyutunu küçült */
+    width: 60px;
+    height: 60px;
+    font-size: 1.4rem;
   }
 }
 
-/* Büyük Ekranlar için (min-width: 901px) */
+/* Large screens */
 @media (min-width: 901px) {
   .container {
-    padding: 80px; /* Daha fazla boşluk ekle */
+    padding: 80px;
   }
 
   h1 {
-    font-size: 3.5rem; /* Başlık boyutunu artır */
+    font-size: 3.5rem;
   }
 
   h2 {
-    font-size: 1.6rem; /* İkinci başlık boyutunu artır */
+    font-size: 1.6rem;
   }
 
   #start {
-    font-size: 1.8rem; /* Başlat butonu boyutunu artır */
+    font-size: 1.8rem;
   }
 
   ul li {
-    padding: 12px; /* Liste öğeleri için padding artır */
+    padding: 12px;
   }
 
   .timer {
-    width: 80px; /* Zamanlayıcı genişliğini artır */
-    height: 80px; /* Zamanlayıcı yüksekliğini artır */
-    font-size: 1.6rem; /* Zamanlayıcı yazı boyutunu artır */
+    width: 80px;
+    height: 80px;
+    font-size: 1.6rem;
   }
 
   .results h2 {
-    font-size: 2.5rem; /* Sonuç başlığını artır */
+    font-size: 2.5rem;
   }
 
   .results p {
-    font-size: 1.8rem; /* Sonuç metnini artır */
+    font-size: 1.8rem;
   }
 
   .results button {
-    padding: 12px 24px; /* Sonuç butonunun padding'ini artır */
-    font-size: 1.2rem; /* Sonuç butonunun boyutunu artır */
+    padding: 12px 24px;
+    font-size: 1.2rem;
   }
 }

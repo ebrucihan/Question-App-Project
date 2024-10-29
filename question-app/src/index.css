@@ -1,17 +1,23 @@
+/* Reset margin, padding, and set box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styling with background gradient and font settings */
 body {
-  background: linear-gradient(135deg, #a18cd1, #c9c0c6);
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #333;
-  line-height: 1.6;
-  display: flex;
+  background: linear-gradient(
+    135deg,
+    #a18cd1,
+    #c9c0c6
+  ); /* Gradient background */
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-weight: 400; /* Regular font weight */
+  color: #333; /* Text color */
+  line-height: 1.6; /* Line height */
+  display: flex; /* Center align content */
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100vh; /* Full viewport height */
 }
